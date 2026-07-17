@@ -1,10 +1,14 @@
 const audio = document.getElementById("audio");
 const btn = document.getElementById("playBtn");
 
+audio.loop = true; // يكرر الصوت أثناء استمرار الضغط
+
 function startSound(e) {
     e.preventDefault();
-    audio.currentTime = 0;
-    audio.play();
+
+    if (audio.paused) {
+        audio.play().catch(err => console.log(err));
+    }
 }
 
 function stopSound() {
