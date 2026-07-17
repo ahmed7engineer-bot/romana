@@ -20,11 +20,8 @@ body{
 #playBtn{
     width:220px;
     height:220px;
-    border-radius:50%;
-    border:none;
-    background:#e60000;
-    color:white;
-    font-size:32px;
-    font-weight:bold;
+    background:transparent;   /* شفاف */
+    border:none;              /* يخفي الإطار */
+    color:transparent;        /* يخفي الكتابة */
     cursor:pointer;
 }
